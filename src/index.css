@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
 body{
     background-color: #444;
     color:white;
     margin:20px;
     font:32px "Century Gothic", Futura, sans-serif;
+}
+
+.sub-text{
+    font-size: small;
+}
+.status{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: large;
+}
+
+.title{
+ font-family: 'Pacifico', cursive;
 }
 
 .game{
@@ -30,3 +48,15 @@ body{
     outline: none;
     background-color: #222;
 }
+
+h1{
+color:darkmagenta;
+font-family: 'Bangers',cursive;
+}
+
+.clock{
+color:cyan;
+font-family:'Orbitron', sans-serif;
+font-size: large;
+}
+

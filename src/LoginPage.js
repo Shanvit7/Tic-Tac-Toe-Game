@@ -28,12 +28,15 @@ function LoginPage() {
             <Center h='500px'>
                 <Box bg='none' w='100%' p={4} color='white'>
                     <Center> 
-                      <motion.div initial={{y:-500}} animate={{y:-100}} transition={{ease:'easeOut',duration:2}} > 
-                        Tic-Tac-Toe
+                      <motion.div className='title' initial={{y:-500}} animate={{y:-100,scale:2}} transition={{ease:'easeOut',duration:2}} > 
+                        Tik-Tok-Toe
                       </motion.div>
                     </Center>
-                    <motion.div whileHover={{ scale: 1.3, transition: { duration: 0.5 } }} initial={{ y: -500 }} animate={{ y: -40 }} transition={{ ease: 'easeOut', duration: 2 }} ><Input onChange={handleChange} borderRadius='none' borderRight='none' borderLeft='none' borderTop='none' color='white' id='X' placeholder='Player X name' _placeholder={{ color: 'skyblue' }} /></motion.div>
-                    <motion.div whileHover={{scale:1.3, transition: {duration:0.5}}} initial={{ y: -500 }} animate={{ y:-10}} transition={{ ease: 'easeOut', duration: 2 }}  ><Input onChange={handleChange}  borderRadius='none' borderRight='none' borderLeft='none' borderTop='none' color='white' id='O' placeholder='Player O name' _placeholder={{ color: 'skyblue' }} /></motion.div>
+                    <Center>
+                        <motion.div className='sub-text' initial={{ y: -500 }} animate={{ y: -50, scale: 1.5 }} transition={{ ease: 'easeOut', duration: 2 }} >Make your move under 5 seconds</motion.div>
+                    </Center>
+                    <motion.div whileHover={{ scale: 1.3, transition: { duration: 0.5 } }} initial={{ y: -500 }} animate={{ y: 10 }} transition={{ ease: 'easeOut', duration: 2 }} ><Input onChange={handleChange} borderRadius='none' borderRight='none' borderLeft='none' borderTop='none' color='white' id='X' placeholder='Player X name' _placeholder={{ color: 'skyblue' }} /></motion.div>
+                    <motion.div whileHover={{scale:1.3, transition: {duration:0.5}}} initial={{ y: -500 }} animate={{ y:50}} transition={{ ease: 'easeOut', duration: 2 }}  ><Input onChange={handleChange}  borderRadius='none' borderRight='none' borderLeft='none' borderTop='none' color='white' id='O' placeholder='Player O name' _placeholder={{ color: 'skyblue' }} /></motion.div>
                 </Box>
             </Center>
          <Center h='100px'>

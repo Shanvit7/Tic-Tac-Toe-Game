@@ -53,11 +53,14 @@ export const boardSlice = createSlice({
         
         admitO(state,action){
             state.playerO = action.payload;
-        }
+        },
+        turnTonext(state){
+            state.xIsnext = !state.xIsnext;
+        },
     },
 })
 
-export const {click,admitX,admitO,rematch} = boardSlice.actions;
+export const { click, admitX, admitO, rematch, turnTonext} = boardSlice.actions;
 
 export default boardSlice.reducer;
 
